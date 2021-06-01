@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Ejercicio 02</title>
+    </head>
+    <body>
+        <ul>
+            <h3>Profesores</h3>
+            {% for d in data1 %}
+                <li>{{d.name}}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <h3>Estudiantes</h3>
+            {% for d in data2 %}
+                <li>{{d.name}}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <h3>Cursos</h3>
+            {% for d in data3 %}
+                <li>{{d.name}} ({{d.creditos}})</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            <h3>Secciones</h3>
+            {% for d in data4 %}
+                <li>{{d.codigo}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
